@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Profit or Loss Percentage Calculator</title> -->
+    <link rel="stylesheet" href="PL.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Profit or Loss Percentage Calculator</h1> -->
+        <div>
+            <label for="cp">Cost Price (C.P.) in Rs:</label>
+            <input type="number" id="cp" step="0.01">
+        </div>
+        <div>
+            <label for="sp">Selling Price (S.P.) in Rs:</label>
+            <input type="number" id="sp" step="0.01">
+        </div>
+        <button onclick="displayProfitOrLossPercentage()">Calculate</button>
+        <p id="result"></p>
+    </div>
+    <script src="PL.js"></script>
+</body>
+</html>

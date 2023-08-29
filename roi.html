@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annualized ROI Calculator</title>
+    <link rel="stylesheet" href="roi.css"> 
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Annualized ROI Calculator</h1> -->
+        <div>
+          <label for="initialInvestment">Initial Investment Amount (Cost of the Investment) in Rs:</label>
+            <input type="number" id="initialInvestment" step="0.01">
+        </div>
+        <div>
+            <label for="amountEarned">Amount Earned (or sold for) from the Investment in Rs:</label>
+            <input type="number" id="amountEarned" step="0.01">
+        </div>
+        <div>
+            <label for="years">Time Period of the Investment (in years):</label>
+            <input type="number" id="years" step="0.01">
+        </div>
+        <button onclick="computeAnnualizedROI()">Calculate Annualized ROI</button>
+        <p id="result"></p>
+    </div>
+    <script src="roi.js"></script>
+</body>
+</html>

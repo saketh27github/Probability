@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Break-Even Point Calculator</title> -->
+    <link rel="stylesheet" href="Be.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Break-Even Point Calculator</h1> -->
+        <div>
+            <label for="fixedCosts">Total Fixed Costs (e.g., rent, salaries) in Rs:</label>
+            <input type="number" id="fixedCosts" step="0.01">
+        </div>
+        <div>
+            <label for="sellingPricePerUnit">Selling Price per Unit in Rs:</label>
+            <input type="number" id="sellingPricePerUnit" step="0.01">
+        </div>
+        <div>
+            <label for="variableCostPerUnit">Variable Cost per Unit in Rs:</label>
+            <input type="number" id="variableCostPerUnit" step="0.01">
+        </div>
+        <button onclick="calculateBreakEvenPoint()">Calculate Break-Even Point</button>
+        <p id="result"></p>
+    </div>
+    <script src="Be.js"></script>
+</body>
+</html>

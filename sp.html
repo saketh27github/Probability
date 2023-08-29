@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Selling Price Calculator</title> -->
+    <link rel="stylesheet" href="sp.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>Selling Price Calculator</h1> -->
+        <div>
+          <p><strong><label for="cp">Cost Price (C.P.): </label></strong></p>  
+            <input type="number" id="cp" step="0.01">
+        </div>
+        <div>
+          <p><strong><label for="gainPercentage">Gain Percentage: </label></strong></p>  
+            <input type="number" id="gainPercentage">
+        </div>
+        <button onclick="computeSP()">Calculate S.P.</button>
+        <p id="result"></p>
+    </div>
+    <script src="sp.js"></script>
+</body>
+</html>
